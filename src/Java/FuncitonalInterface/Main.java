@@ -91,7 +91,7 @@ public class Main {
         };
 
         // Binary Operator
-        BinaryOperator<Integer> add = (a, b) -> a + b;
+        BinaryOperator<Integer> add = Integer::sum;
         System.out.println(add.apply(5,9));
 
         // BinaryOperator<Integer> max = BinaryOperator.maxBy((x, y) -> Integer.compare(x, y)); -- With lambda expression
