@@ -34,5 +34,18 @@ public class Basics {
 
         numbers.addAll(List.of(9, 7, 6, 14)); // List.of like Arrays.asList is immutable
         System.out.println("After Adding it" + numbers);
+
+        Collections.addAll(subjectsList, "CyberSecurity", "Cryptography", "Java");
+        String subject = subjectsList.get(1);
+        System.out.println(subjectsList);
+        System.out.println(subject);
+
+        subjectsList.set(2, "Software Engineering");
+        System.out.println(subjectsList.size());
+
+        subjectsList
+                .forEach((sub)-> {
+                    System.out.println(sub + subjectsList.indexOf(sub));
+                });
     }
 }
